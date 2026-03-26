@@ -73,10 +73,63 @@ make
 
 ## 🐳 Run with Docker (Recommended)
 
+Follow these steps to run MonHealth using Docker:
+
+---
+
+### 🔹 Step 1: Clone the repository
+
 ```bash
+git clone https://github.com/Ayush0604-alt/Mini-Version-Top.git
+cd Mini-Version-Top
+```
+
+---
+
+### 🔹 Step 2: Build Docker image
+
+```bash
+docker build -t monhealth .
+```
+
+👉 This creates a Docker image named **monhealth**
+
+---
+
+### 🔹 Step 3: Run the container
+
+```bash
+docker run --rm -it --pid=host --init monhealth
+```
+
+---
+
+## 🔑 Explanation of flags
+
+* `--rm` → Automatically removes the container after it stops
+* `-it` → Runs in interactive terminal mode
+* `--pid=host` → Allows access to host system processes
+* `--init` → Ensures proper signal handling (Ctrl + C works)
+
+---
+
+## ⚠️ Important Notes
+
+* Run commands in the folder where **Dockerfile** exists
+* Works only on **Linux / WSL / EC2**
+* If using AWS EC2, ensure Docker is installed
+
+---
+
+## 🧪 Example (AWS EC2)
+
+```bash
+git clone https://github.com/Ayush0604-alt/Mini-Version-Top.git
+cd Mini-Version-Top
 docker build -t monhealth .
 docker run --rm -it --pid=host --init monhealth
 ```
+
 
 ### 🔑 Explanation of flags
 
