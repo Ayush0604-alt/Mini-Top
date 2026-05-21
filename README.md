@@ -76,10 +76,10 @@ make
 Follow these steps to run MonHealth using Docker:
 
 ---
-
+```
 docker pull ayush0006/monhealth:latest
 docker run --rm -it --pid=host --init ayush0006/monhealth:latest
-
+```
 ---
 
 ## 🔑 Explanation of flags
@@ -102,10 +102,8 @@ docker run --rm -it --pid=host --init ayush0006/monhealth:latest
 ## 🧪 Example (AWS EC2)
 
 ```bash
-git clone https://github.com/Ayush0604-alt/Mini-Version-Top.git
-cd Mini-Version-Top
-docker build -t monhealth .
-docker run --rm -it --pid=host --init monhealth
+docker pull ayush0006/monhealth:latest
+docker run --rm -it --pid=host --init ayush0006/monhealth:latest
 ```
 
 
