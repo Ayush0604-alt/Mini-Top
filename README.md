@@ -77,30 +77,8 @@ Follow these steps to run MonHealth using Docker:
 
 ---
 
-### 🔹 Step 1: Clone the repository
-
-```bash
-git clone https://github.com/Ayush0604-alt/Mini-Version-Top.git
-cd Mini-Version-Top
-```
-
----
-
-### 🔹 Step 2: Build Docker image
-
-```bash
-docker build -t monhealth .
-```
-
-👉 This creates a Docker image named **monhealth**
-
----
-
-### 🔹 Step 3: Run the container
-
-```bash
-docker run --rm -it --pid=host --init monhealth
-```
+docker pull ayush0006/monhealth:latest
+docker run --rm -it --pid=host --init ayush0006/monhealth:latest
 
 ---
 
